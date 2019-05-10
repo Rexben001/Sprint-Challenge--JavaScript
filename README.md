@@ -30,7 +30,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-`.forEach` returns undefined while `.map` returns a new Array of the same size.
+`.forEach` returns undefined and it iterates over array while `.map` it iterates over an array returns a new Array of the same size. 
 
 2. What is the difference between a function and a method?
 
@@ -41,13 +41,14 @@ Function is a reusable lines of code that can be invoked by calling it with pare
 CLosure is calling a function inside another function.
 
 4. Describe the four rules of the 'this' keyword.
-New Binding
-Window Binding
-Implicit Binding 
-Explicit Binding
+* 1. Window Binding - The keyword 'this' is returns the window Object when used in a global environment/scope.
+* 2. Implicit Binding - The keyword 'this' is implicitly referring to the immediate environment. The object at the left before that dot is `this`.
+* 3.  New Binding -  this refers to the  instance of the object that is created and returned by the constructor function
+* 4. Explicit Binding - It is used when .call(), .apply() and .bind() are used on a function.
+*
 
 5. Why do we need super() in an extended class?
-To inherit the parameters from the extended class
+To call the methods on a parent class.
 
 ## Project Set up
 
