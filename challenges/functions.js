@@ -8,7 +8,7 @@
  */
 
 function consume(params1, params2, params3) {
-  return console.log(params3(params1, params2));
+   console.log(params3(params1, params2));
 }
 
 /* Step 2: Create several functions to callback with consume();
@@ -38,7 +38,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-//The `internal` variable can be accessed by `nestedfunction()` because of the nestedFunction() and internal variable are inside the same block scope.
+//The `internal` variable can be accessed by `nestedfunction()` because of the nestedFunction() and internal variable are inside the same block scope. It is a closure and it has access to it
 // Explanation:
 
 const external = "I'm outside the function";
